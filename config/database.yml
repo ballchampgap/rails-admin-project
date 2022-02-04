@@ -50,6 +50,4 @@ test:
 #
 production:
   <<: *default
-  database: admin_project_end1_production
-  username: admin_project_end1
-  password: <%= ENV['ADMIN_PROJECT_END1_DATABASE_PASSWORD'] %>
+  url: <%= ENV['mysql://b6d20c38d8f759:50b1eca8@us-cdbr-east-05.cleardb.net/heroku_a481fd7865c86eb?reconnect=true'] %>
